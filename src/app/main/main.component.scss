@@ -1,0 +1,27 @@
+
+
+section{
+
+    height: 300px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    input{
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        border-bottom: 2px solid rgb(17, 185, 194);
+        font-weight: 900;
+    }
+    
+    button{
+        height: 30px;
+        background-color: rgb(17, 185, 194);
+        width: 60px;
+        font-weight: 900;
+    }
+
+}
