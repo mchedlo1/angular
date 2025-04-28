@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-main1',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './main1.component.html',
   styleUrl: './main1.component.scss'
 })
@@ -19,6 +20,8 @@ export class Main1Component {
         zip : "",
     }
   } 
+
+  shoow = false
 
   studentArr : any[] = []
 
@@ -41,6 +44,8 @@ export class Main1Component {
   }
 
   Show(){
+
+    this.shoow == false? this.shoow = true: this.shoow = false
 
   }
 }
