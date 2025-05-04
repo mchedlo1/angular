@@ -1,0 +1,15 @@
+
+
+
+
+<main>
+    <div *ngFor="let el of productsArr">
+        <img [src]="el.image" alt="">
+        <h2>{{el.title}}</h2>
+        <p>{{el.description}}</p>
+        <h2>Category : {{el.category}}</h2>
+        <h2>Price : {{el.price}}</h2>
+        <h3>Rating : {{el.rating}}</h3>
+        <button routerLink="/productsApi/{{el.id}}">See more</button>
+    </div>
+</main>
