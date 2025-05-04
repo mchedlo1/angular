@@ -1,0 +1,27 @@
+
+
+<main>
+    <section class="sct1">
+        <input type="text" placeholder="Name" [(ngModel)]="student.name">
+        <input type="text" placeholder="Age" [(ngModel)]="student.age">
+        <input type="text" placeholder="Email" [(ngModel)]="student.email">
+        <input type="text" placeholder="Street" [(ngModel)]="student.address.street">
+        <input type="text" placeholder="City" [(ngModel)]="student.address.city">
+        <input type="text" placeholder="Zip" [(ngModel)]="student.address.zip">
+        <div>
+            <button (click)="Save()">Save</button>
+            <button (click)="Show()">Show</button>
+        </div>
+        </section>
+        
+        <section class="sct2" *ngIf="shoow">
+            <article>
+            <h2>{{student.name}}</h2>
+            <h2>{{student.age}}</h2>
+            <h2>{{student.email}}</h2>
+            <h2>{{student.address.street}}</h2>
+            <h2>{{student.address.city}}</h2>
+            <h2>{{student.address.zip}}</h2>
+            </article>
+        </section>
+</main>
