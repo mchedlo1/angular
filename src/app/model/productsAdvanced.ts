@@ -5,7 +5,6 @@ export class ProductsAdvanced {
     price!: number;
     description!: string
     category!: string
-    image!: string
     rating!: number
     discountPercentage!: number
     stock!: number
@@ -21,7 +20,7 @@ export class ProductsAdvanced {
     returnPolicy!: string
     minimumOrderQuantity!: number
     meta!: Meta
-    images!: string
+    images?: string[]
     thumbnail!: string
 
 }
